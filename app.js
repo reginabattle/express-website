@@ -6,14 +6,17 @@ const nodeMailer = require('nodemailer');
 // Initialize app
 let app = express();
 
+// Configure Jade
+app.set('views', path.join(__dirname, 'views'));
+app.set('view engine', 'jade');
+
 // Set body parser middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 // Create route
 app.get('/', (request, response) => {
-	// Send to client
-	response.send('Hello world!');
+	response.render('index');
 });
 
 // Listen on port 3000
