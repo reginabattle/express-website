@@ -1,4 +1,23 @@
 extends layout
 
 block content
-	h3 Hello World!
+	nav.navbar.navbar-expand-lg.navbar-light.bg-light
+		a.navbar-brand(href="#") Record Store
+		button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+			span.navbar-toggler-icon
+
+		#navbarNav.collapse.navbar-collapse
+			ul.navbar-nav
+				li.nav-item.active
+					a.nav-link(href="/")
+						Home
+						span.sr-only (current)
+				li.nav-item
+					a.nav-link(href="#") About
+				li.nav-item
+					a.nav-link(href="#") Contact
+
+
+	script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js")
+	script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js")
