@@ -13,6 +13,7 @@ app.set('view engine', 'jade');
 // Set body parser middleware
 app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
+app.use(express.static(path.join(__dirname, 'public')));
 
 // Create route
 app.get('/', (request, response) => {
