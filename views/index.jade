@@ -1,18 +1,43 @@
 extends layout
 
 block content
-	nav.navbar.navbar-expand-lg.navbar-light.bg-light
-		a.navbar-brand(href="#") Record Store
-		button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
-			span.navbar-toggler-icon
+	section.jumbotron.text-center
+			.container
+				h1.jumbotron-heading New name, look, and tool for making web requests.         
+				p.lead.text-muted
+					|Submit requests to our team and track the progress along the way.       
+				p
+					a.btn.btn-primary.my-2(href="#") Make a request       
 
-		#navbarNav.collapse.navbar-collapse
-			ul.navbar-nav
-				li.nav-item.active
-					a.nav-link(href="/")
-						Home
-						span.sr-only (current)
-				li.nav-item
-					a.nav-link(href="#") About
-				li.nav-item
-					a.nav-link(href="#") Contact
+		.album.py-5.bg-light
+			.container
+				.row
+					.col-md-4
+						.card.mb-4.box-shadow          
+							.card-body
+								span
+									i.fal.fa-edit 
+								h2
+									| Add, edit, or delete elements
+								p.card-text
+									| This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+
+					.col-md-4
+						.card.mb-4.box-shadow               
+							.card-body
+								span
+									i.fal.fa-wrench 
+								h2
+									| Troubleshoot issues
+								p.card-text
+									| This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.
+
+					.col-md-4
+						.card.mb-4.box-shadow
+							.card-body
+								span
+									i.fal.fa-hands-helping 
+								h2
+									| Provide consultation
+								p.card-text
+									| This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.

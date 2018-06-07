@@ -1,0 +1,23 @@
+
+.jumbotron {
+	margin-bottom: 0;
+}
+
+.jumbotron .container {
+  max-width: 40rem;
+}
+
+.card-body h2 {
+	font-size: 1.25em;
+}
+
+.card-body span {
+	display: block;
+	text-align: center;
+}
+
+.card-body i {
+	font-size: 2.75em;
+	margin-bottom: 0.5em;
+	text-align: center;
+}

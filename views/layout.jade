@@ -1,18 +1,44 @@
 doctype html
 html
-  head
-    meta(charset="utf-8")    
-    meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
+	head
+		meta(charset="utf-8")    
+		meta(name="viewport", content="width=device-width, initial-scale=1, shrink-to-fit=no")
 
-    title Record Store
+		title #{title} &ndash; Digital Requests
+		
+		link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css", rel="stylesheet")
+		link(href="https://pro.fontawesome.com/releases/v5.0.13/css/all.css", rel="stylesheet")
+		link(href="css/main.css", rel="stylesheet")
+	
+	body
+		nav.navbar.navbar-expand-lg.navbar-light.bg-light
+			a.navbar-brand(href="/") Digital Requests
+			button.navbar-toggler(type="button", data-toggle="collapse", data-target="#navbarNav", aria-controls="navbarNav", aria-expanded="false", aria-label="Toggle navigation")
+				span.navbar-toggler-icon
 
-    link(href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css", rel="stylesheet")
-    link(href="css/main.css", rel="stylesheet")
-  
-  body
-    
-  block content
+			#navbarNav.collapse.navbar-collapse
+				ul.navbar-nav
+					li.nav-item.active
+						a.nav-link(href="/")
+							Home
+							span.sr-only (current)
+					li.nav-item
+						a.nav-link(href="/about") About
+					li.nav-item
+						a.nav-link(href="/services") Services
+					li.nav-item
+						a.nav-link(href="/request") Make a request
+	
+		main(role="main").main-content
+			block content
+				
+		footer.text-muted
+			.container-fluid
+				p.float-right
+					a(href="#") Back to top       
+				p © 2018 Vinyl Lab.
 
-  script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
-  script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js")
-  script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js")
+
+	script(src="https://code.jquery.com/jquery-3.3.1.slim.min.js")
+	script(src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/popper.min.js")
+	script(src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js")
