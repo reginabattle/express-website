@@ -17,7 +17,11 @@ app.use(express.static(path.join(__dirname, 'public')));
 
 // Create route
 app.get('/', (request, response) => {
-	response.render('index');
+	response.render('index', {title: 'Home'});
+});
+
+app.get('/about', (request, response) => {
+	response.render('about', {title: 'About'});
 });
 
 // Listen on port 3000
