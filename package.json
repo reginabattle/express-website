@@ -9,8 +9,9 @@
   "dependencies": {
     "body-parser": "*",
     "express": "*",
-    "jade": "*",
-    "nodemailer": "*"
+    "nodemailer": "*",
+    "nodemon": "^1.17.5",
+    "pug": "^2.0.3"
   },
   "repository": {
     "type": "git",

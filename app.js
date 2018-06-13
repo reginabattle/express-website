@@ -8,7 +8,7 @@ let app = express();
 
 // Configure Jade
 app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'jade');
+app.set('view engine', 'pug');
 
 // Set body parser middleware
 app.use(bodyParser.json());
