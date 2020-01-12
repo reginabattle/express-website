@@ -4,13 +4,13 @@
   "description": "Simple website using Express framework",
   "main": "app.js",
   "scripts": {
+    "start": "nodemon",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "dependencies": {
     "body-parser": "*",
     "express": "*",
     "nodemailer": "*",
-    "nodemon": "^1.17.5",
     "pug": "^2.0.3"
   },
   "repository": {
@@ -22,5 +22,8 @@
   "bugs": {
     "url": "https://github.com/reginabattle/express-website/issues"
   },
-  "homepage": "https://github.com/reginabattle/express-website#readme"
+  "homepage": "https://github.com/reginabattle/express-website#readme",
+  "devDependencies": {
+    "nodemon": "^2.0.2"
+  }
 }
